@@ -2,7 +2,7 @@
   "name": "uilib",
   "version": "1.0.0",
   "description": "React Native + React Native Web Universal UI Component Library",
-  "main": "index.js",
+  "main": "lib/index.js",
   "repository": "git@github.com:mora260/uilib.git",
   "author": "Andres Mora <andres@devsenpai.com>",
   "license": "MIT",
