@@ -1,10 +1,15 @@
 import React from 'react'
-import { Button as RCButton } from 'react-native'
+import { Pressable, NativeSyntheticEvent, NativeTouchEvent, Text } from 'react-native'
 
 interface ButtonProps {
     label: string
+    onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void
 }
 
-export const Button = ( {label} : ButtonProps) => {
-    return <RCButton> {label} </RCButton>
+export const Button = ( {label, onPress} : ButtonProps) => {
+    return <Pressable onPress={onPress}>
+        <Text>
+            {label}
+        </Text>
+    </Pressable>
 }
