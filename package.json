@@ -9,6 +9,7 @@
   "private": false,
   "scripts": {
     "build": "parcel build",
+    "prepare": "yarn build",
     "types": "tsc --noEmit",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
