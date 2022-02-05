@@ -1,8 +1,7 @@
 import React from 'react';
 import { NativeSyntheticEvent, NativeTouchEvent } from 'react-native';
 import { Pressable, Text } from 'dripsy';
-
-interface ButtonProps {
+export interface ButtonProps {
   label: string;
   color?: string;
   onPress: (ev: NativeSyntheticEvent<NativeTouchEvent>) => void;
